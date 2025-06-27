@@ -8,5 +8,5 @@ switch (arg){
         console.log("Arguments found");
         break;
     default:
-        console.log("one Argument");
+        console.log("Argument found");
 }
