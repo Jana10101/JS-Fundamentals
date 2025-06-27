@@ -1,5 +1,5 @@
-let a="44";
-let b="10";
+let a=Number(process.argv[2]);
+let b=Number(process.argv[3]);
 if (isNaN(a) || isNaN(b)) {
     console.log("Missing number of occurrences");
 }
