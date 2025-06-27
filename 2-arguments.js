@@ -1,9 +1,10 @@
-let arg=3;
+let arg=(process.argv[2]);
+let arg1=(process.argv[3]);
 switch (arg){
-    case 0: 
+    case undefined: 
         console.log("No argument");
         break;
-    case 1:
+    case arg1 || arg :
         console.log("One argument");
         break;
     default:
