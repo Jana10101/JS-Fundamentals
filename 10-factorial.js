@@ -1,14 +1,11 @@
+const n = Number(process.argv[2]);
 
 function factorial(n) {
-if (isNaN(n)){
-    console.log(1);
-}else{
-    let result=1;
-    for (let i=n; i >=1 ; i--){
-        result=result*i;
-    }
-    console.log(result);
+    if (isNaN(n)|| n==0 ){
+        console.log(1);
+    }else{
+        let result=n*factorial(n-1)
+        return result;
+        }
 }
-}
-factorial("5"); // 120
-factorial(0); // 1
+console.log(factorial(n)); 
