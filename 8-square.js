@@ -1,4 +1,4 @@
-let size= 5;
+let size= Number(process.argv[2]);
 if (isNaN(size)) {
     console.log("Missing size");
 }else{
