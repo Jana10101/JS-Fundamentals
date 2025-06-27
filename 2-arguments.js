@@ -4,9 +4,9 @@ switch (arg){
     case undefined: 
         console.log("No argument");
         break;
-    case arg1 || arg :
-        console.log("One argument");
+    case (arg1 && arg ):
+        console.log("Arguments found");
         break;
     default:
-        console.log("Arguments found");
+        console.log("one Argument");
 }
